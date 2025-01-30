@@ -2,14 +2,10 @@ package com.example.mortgageLoan.model;
 
 import java.time.Instant;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 public class InterestRate {
 	
-	private int maturityPeriod; //in years
-	private double interestRate; // percentage (eg:6.0 for 6%)
+	private int maturityPeriod; 
+	private double interestRate; 
 	private Instant lastUpdate;
 
 	public InterestRate(int maturityPeriod, double interestRate, Instant lastUpdate) {
@@ -37,5 +33,4 @@ public class InterestRate {
 		this.lastUpdate = lastUpdate;
 	}
 	
-
 }
