@@ -3,7 +3,7 @@ package com.example.mortgageLoan.model;
 public class MortgageCheckRequest {
 	
 	private double income;
-	private Double partnerIncome; //nullable
+	private Double partnerIncome; 
 	private int maturityPeriod;
 	private double loanValue;
 	private double homeValue;
