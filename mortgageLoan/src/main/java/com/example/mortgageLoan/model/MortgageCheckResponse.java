@@ -1,9 +1,5 @@
 package com.example.mortgageLoan.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-
 public class MortgageCheckResponse {
 	
 	private boolean feasible;
@@ -30,7 +26,5 @@ public class MortgageCheckResponse {
 	public void setMonthlyPayment(double monthlyPayment) {
 		this.monthlyPayment = monthlyPayment;
 	}
-
-	
 	
 }
