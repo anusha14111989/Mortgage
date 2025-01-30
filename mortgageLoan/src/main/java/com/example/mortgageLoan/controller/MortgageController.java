@@ -18,11 +18,8 @@ import com.example.mortgageLoan.service.MortgageService;
 @RequestMapping("/api")
 public class MortgageController {
 
-	private final MortgageService mortgageService;
-	
-	public MortgageController(MortgageService mortgageService) {
-		this.mortgageService=mortgageService;
-	}
+	@Autowired
+	private MortgageService mortgageService;
 	
 	@GetMapping("/interest-rates")
 	public ResponseEntity<List<InterestRate>> getInterestRates(){
